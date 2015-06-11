@@ -1,0 +1,41 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}*/
+h1, h3, p {
+  font-family: "Helvetica" sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-self: center;
+}
+
+#bags {
+  width: 40px;
+}
+
+body {
+  background-color: #2E9AFE;
+}
+
+.left {
+  margin-right: 15px;
+  display: inline-block;
+}
+.right {
+  margin-left: 15px;
+  display: inline-block;
+}
