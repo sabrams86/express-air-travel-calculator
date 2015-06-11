@@ -2,12 +2,12 @@ extends layout
 
 block content
   h1.centered= title
-  form.centered(action='#' method='get')
+  form.centered(action='/' method='post')
     div.left
       p
         label(for='departure') Departure City
       p
-        select#departure
+        select#departure(name='departure')
           option(value='New York') New York
           option(value='Chicago') Chicago
           option(value='Los Angeles') Los Angeles
@@ -15,7 +15,7 @@ block content
         p
           label(for='arrival') Arrival City
         p
-          select#arrival
+          select#arrival(name='arrival')
             option(value='New York') New York
             option(value='Chicago') Chicago
             option(value='Los Angeles') Los Angeles
@@ -26,7 +26,7 @@ block content
     p
       label(for='class') Class
     p
-      select#class
+      select#class(name='flightclass')
         option(value='coach') Coach
         option(value='business') Business (+ $200)
         option(value='first') First (+ $500)
@@ -39,3 +39,5 @@ block content
       input#dcode(type='text' name='discount')
     input.button(type='submit' name='submit' value='Calculate Price')
   div(class='total centered')
+    if total
+      h3 Your Price is: $ #{total}
